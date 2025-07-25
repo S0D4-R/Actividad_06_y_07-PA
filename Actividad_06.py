@@ -1,12 +1,19 @@
 """
-Ingresar n números y mostrar:
-    La suma total
-    El promedio
-    La cantidad de números positivos y negativos
-Calcular el área de un triángulo
-Verificar si un número es par o impar
-Calcular el promedio de n calificaciones
-Ingresar n números y mostrar el mayor y el menor
+Ingresar una lista de n números reales y mostrar:
+    Suma total
+    Promedio
+    Cantidad de positivos, negativos y ceros
+    Cuántos son múltiplos de 3
+Calcular el área y perímetro de un rectángulo (usar funciones separadas para cada cálculo)
+Verificar si un número ingresado es primo o no
+Calcular el promedio de n calificaciones, e indicar:
+    Cuántas son mayores o iguales a 85
+    Cuántas están en zona de riesgo (menor a 60)
+Ingresar una lista de n números enteros y mostrar:
+    El número mayor
+    El número menor
+Cuántos se repiten (frecuencia)
+Simular una calculadora de operaciones básicas (suma, resta, multiplicación y división) entre dos números
 Salir del programa
 """
 from Demos.service.pipeTestServiceClient import testLargeMessage
