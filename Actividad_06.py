@@ -57,7 +57,7 @@ def max_min_calculataa():
         conf = input("Quiere agregar uno más? Y/N")
         if conf.lower() == "n":
             break
-    print(f"El número mínimo: {min(temp_list)}\nEl número máximos es: {max(temp_list)}")
+    print(f"El número mínimo: {min(temp_list)}\nEl número máximo es: {max(temp_list)}")
 
 
 def score_calc():
