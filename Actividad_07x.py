@@ -22,28 +22,36 @@ from Demos.service.pipeTestServiceClient import testLargeMessage
 def multifunction_n(maximum):
     try:
         nombaa_1 = 0
+        three_y = 0
+        zeroes = 0
         nombaa_neg = 0
         nombaa_pos = 0
         for number in range(maximum + 1):
             nombaa_x = int(input("Coloque un número: "))
             if nombaa_x < 0:
                 nombaa_neg += 1
+            elif nombaa_x == 0:
+                zeroes += 1
+            elif nombaa_x % 3:
+                three_y += 1
             else:
                 nombaa_pos += 1
             nombaa_1 += nombaa_x
         print(f"La suma de todos es: {nombaa_1}\n"
               f"El promedio es: {nombaa_1 / maximum}\n"
               f"La cantidad de números negativos es: {nombaa_neg}\n"
+              f"La cantidad de ceros es: {zeroes}\n"
+              f"La cantidad de múltiplo de tres es: {three_y}\n"
               f"La cantidad de números positivos es: {nombaa_pos}\n\n")
     except ValueError:
         print("Número no válido")
 
 
-def triarea():
+def rectarea():
     try:
         base = int(input("Coloque la base del triángulo: "))
         height = int(input("Coloque la altura del tirángulo: "))
-        return print(f"El área del triángulo es: {(base * height) / 2}\n\n")
+        return print(f"El área del triángulo es: {(base * height)}\n\n")
     except ValueError:
         return print("Número no válido")
 
@@ -96,7 +104,7 @@ while key:
             except ValueError:
                 print("Ese no es un número")
         case "2":
-            triarea()
+            rectarea()
         case "3":
             try:
                 eve_xxx = int(input("Coloque el número: "))
